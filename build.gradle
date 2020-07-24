@@ -18,4 +18,7 @@ dependencies {
 
     compileOnly 'org.projectlombok:lombok:1.18.10'
     annotationProcessor 'org.projectlombok:lombok:1.18.10'
+
+    //mongoDB dependency
+    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
 }
