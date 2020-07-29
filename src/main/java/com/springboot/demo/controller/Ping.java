@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Ping {
     @RequestMapping(value="/ping",method= RequestMethod.GET,produces = {MediaType.APPLICATION_JSON_VALUE})
-    public ResponseEntity<CustomHttpResponseData> ping(){
+    public ResponseEntity<CustomHttpResponseData> ping() throws InterruptedException {
         return ResponseEntity.ok(new CustomHttpResponseData(true,200,"","Yes I am working all day and night"));
     }
 }
